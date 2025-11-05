@@ -14,8 +14,8 @@ import {
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 import { Feather, MaterialCommunityIcons } from "@expo/vector-icons";
-import categoriesData from "/Users/nisanurkorkmaz/Desktop/REACT_N/foodAppUII/assets/data/categoriesData";
-import popularData from "/Users/nisanurkorkmaz/Desktop/REACT_N/foodAppUII/assets/data/popularData.js";
+import categoriesData from "../assets/data/categoriesData.js";
+import popularData from "../assets/data/popularData.js";
 import colors from "../assets/colors/colors";
 
 SplashScreen.preventAutoHideAsync();
@@ -54,10 +54,10 @@ export default function Home({ navigation }) {
   };
 
   const [loaded, error] = useFonts({
-    "Montserrat-Bold": require("/Users/nisanurkorkmaz/Desktop/REACT_N/foodAppUII/assets/fonts/Montserrat-Bold.ttf"),
-    "Montserrat-SemiBold": require("/Users/nisanurkorkmaz/Desktop/REACT_N/foodAppUII/assets/fonts/Montserrat-SemiBold.ttf"),
-    "Montserrat-Regular": require("/Users/nisanurkorkmaz/Desktop/REACT_N/foodAppUII/assets/fonts/Montserrat-Regular.ttf"),
-    "Montserrat-Medium": require("/Users/nisanurkorkmaz/Desktop/REACT_N/foodAppUII/assets/fonts/Montserrat-Medium.ttf"),
+    "Montserrat-Bold": require("../assets/fonts/Montserrat-Bold.ttf"),
+    "Montserrat-SemiBold": require("../assets/fonts/Montserrat-SemiBold.ttf"),
+    "Montserrat-Regular": require("../assets/fonts/Montserrat-Regular.ttf"),
+    "Montserrat-Medium": require("../assets/fonts/Montserrat-Medium.ttf"),
   });
 
   useEffect(() => {
